@@ -4,3 +4,5 @@
 # Run this file using python3 leap_year.py
 # This program finds if a year is a leap year
 
+def run(x):
+    return "is not a leap year"
