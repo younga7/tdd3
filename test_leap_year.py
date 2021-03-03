@@ -8,6 +8,9 @@ import unittest
 import leap_year
 
 class TestLeapYear(unittest.TestCase):
+    def test_1(self):
+        self.assertEqual(leap_year.run(1), "is not a leap year")
+        self.assertEqual(leap_year.run(2002), "is not a leap year")
 
 
 if __name__ == '__main__':
