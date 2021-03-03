@@ -23,6 +23,8 @@ class TestFizzBuzz(unittest.TestCase):
     def test5(self):
         self.assertEqual(FizzBuzz.run(0), "Out of Bounds")
         self.assertEqual(FizzBuzz.run(101), "Out of Bounds")
+    def test6(self):
+        self.assertEqual(FizzBuzz.run("10"), "Type Error")
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
