@@ -7,6 +7,8 @@
 # printing "Buzz" and multiples of both "FizzBuzz"
 
 def run(x):
+    if (x < 1 or x > 100):
+        return("Out of Bounds")
     if (x % 3 == 0 and x % 5 == 0):
         return "FizzBuzz"
     elif (x % 3 == 0):
