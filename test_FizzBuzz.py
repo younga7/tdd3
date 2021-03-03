@@ -17,6 +17,9 @@ class TestFizzBuzz(unittest.TestCase):
     def test3(self):
         self.assertEqual(FizzBuzz.run(5), "Buzz")
         self.assertEqual(FizzBuzz.run(10), "Buzz")
+    def test4(self):
+        self.assertEqual(FizzBuzz.run(15), "FizzBuzz")
+        self.assertEqual(FizzBuzz.run(30), "FizzBuzz")
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
