@@ -7,8 +7,11 @@
 # printing "Buzz" and multiples of both "FizzBuzz"
 
 def run(x):
-    if (x < 1 or x > 100):
-        return("Out of Bounds")
+    try:
+        if (x < 1 or x > 100):
+            return("Out of Bounds")
+    except TypeError:
+        return("Type Error")
     if (x % 3 == 0 and x % 5 == 0):
         return "FizzBuzz"
     elif (x % 3 == 0):
@@ -17,3 +20,9 @@ def run(x):
         return "Buzz"
     else:
         return x
+
+def printFizzBuzz():
+    for x in range(100):
+        print(run(x + 1))
+
+printFizzBuzz()
