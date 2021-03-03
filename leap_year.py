@@ -6,6 +6,9 @@
 
 def run(x):
     if (x % 4 == 0):
-        return "is a leap year"
+        if (x % 100 == 0):
+            return "is not a leap year"
+        else:
+            return "is a leap year"
     else:
         return "is not a leap year"
