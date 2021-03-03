@@ -5,3 +5,6 @@
 # This program prints numbers from 1 to 100 with
 # multiples of 3 printing "Fizz", multiples of 5
 # printing "Buzz" and multiples of both "FizzBuzz"
+
+def run(x):
+    return x
