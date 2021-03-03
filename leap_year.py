@@ -5,13 +5,16 @@
 # This program finds if a year is a leap year
 
 def run(x):
-    if (x % 4 == 0):
-        if (x % 400 == 0):
-            return "is a leap year"
-        else:
-            if (x % 100 == 0):
-                return "is not a leap year"
-            else:
+    try:
+        if (x % 4 == 0):
+            if (x % 400 == 0):
                 return "is a leap year"
-    else:
-        return "is not a leap year"
+            else:
+                if (x % 100 == 0):
+                    return "is not a leap year"
+                else:
+                    return "is a leap year"
+        else:
+            return "is not a leap year"
+    except TypeError:
+        return("invalid input")
