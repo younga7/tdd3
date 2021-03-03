@@ -7,4 +7,7 @@
 # printing "Buzz" and multiples of both "FizzBuzz"
 
 def run(x):
-    return x
+    if (x % 3 == 0):
+        return "Fizz"
+    else:
+        return x
