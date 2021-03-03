@@ -5,4 +5,7 @@
 # This program finds if a year is a leap year
 
 def run(x):
-    return "is not a leap year"
+    if (x % 4 == 0):
+        return "is a leap year"
+    else:
+        return "is not a leap year"
